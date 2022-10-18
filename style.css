@@ -1,0 +1,210 @@
+@import url(//db.onlinewebfonts.com/c/8f56148bb7b75bdf3358914c28cb798f?family=Nunito);
+
+* {
+    box-sizing: border-box;
+    font-family: Nunito, 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-secondary: rgb(237, 100, 54);
+}
+
+img {
+    height: 5em;
+}
+
+header {
+    margin-inline: 4em;
+    padding-inline: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0 1px 10px rgba(43, 41, 41, 0.654);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav * {
+    margin-inline: 1em;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+div a {
+    margin-left: 5em;
+    display: block;
+    margin-top: 9.4em;
+}
+
+div a::after {
+    position: absolute;
+    border-top: 0.3em solid;
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    content: '';
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+}
+
+nav a:nth-child(3n)::after {
+    position: absolute;
+    border-top: 0.3em solid;
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    content: '';
+    margin-top: 0.5em;
+    margin-left: 8.5em;
+}
+
+ul {
+    background-color: white;
+    list-style: none;
+    visibility: hidden;
+}
+
+div:hover > ul {
+    visibility: visible;
+}
+
+li {
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-bottom: solid 1px;
+    border-color: rgba(0, 0, 0, 0.144);
+}
+
+li:hover {
+    color: rgb(237, 100, 54);
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+a:hover {
+    color: rgb(237, 100, 54);
+    border-bottom: solid 3px;
+    border-color: rgb(237, 100, 54);
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: lighter;
+    border: solid 3px;
+    border-radius: 0em 2em 2em 2em;
+}
+
+nav button {
+    width: 8em;
+    height: 3em;
+    background-color: transparent;
+    border-color: rgb(237, 100, 54);
+}
+
+nav button:hover {
+    color: white;
+    background-color: rgb(237, 100, 54);
+}
+
+div button {
+    width: 9em;
+    height: 4em;
+    background-color: rgb(237, 100, 54);
+    color: white;
+}
+
+div button:hover {
+    color: rgb(237, 100, 54);
+    background-color: white;
+}
+
+main {
+    margin-inline: 4em;
+    height: 90vh;
+}
+
+h3,
+div,
+section * {
+    padding: 1em;
+}
+
+h3 {
+    color: rgb(237, 100, 54);
+    font-size: 2em;
+    display: flex;
+    align-items: flex-end;
+    height: 15%;
+}
+
+main div {
+    margin-inline: 1em;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 5.7em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75%;
+}
+
+section img {
+    height: 37em;
+    width: 34em;
+    border: transparent;
+    border-radius: 10%;
+}
+
+figure {
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 6em;
+}
+
+figure:hover > h4 {
+    visibility: visible;
+}
+
+figure:hover > p {
+    visibility: visible;
+}
+
+p {
+    visibility: hidden;
+    font-size: 2.5em;
+}
+
+h4 {
+    visibility: hidden;
+    font-size: 1.5em;
+}
