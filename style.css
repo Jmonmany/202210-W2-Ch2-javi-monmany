@@ -1,8 +1,8 @@
-@import url(//db.onlinewebfonts.com/c/8f56148bb7b75bdf3358914c28cb798f?family=Nunito);
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
 * {
     box-sizing: border-box;
-    font-family: Nunito, 'Courier New', Courier, monospace;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
@@ -63,7 +63,7 @@ nav div {
 div a {
     margin-left: 5em;
     display: block;
-    margin-top: 9.4em;
+    margin-top: 9.3em;
 }
 
 div a::after {
