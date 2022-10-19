@@ -26,6 +26,24 @@ header {
     box-shadow: 0 1px 10px rgba(43, 41, 41, 0.654);
 }
 
+header > :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+header > :last-child img {
+    height: 2em;
+    cursor: pointer;
+}
+
+header > :last-child ul {
+    position: absolute;
+    right: 0%;
+    top: 7%;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -159,7 +177,6 @@ main div {
     margin-inline: 1em;
     height: 10%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -180,15 +197,21 @@ section img {
     width: 34em;
     border: transparent;
     border-radius: 10%;
+    padding: 0;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
 }
 
 figure {
+    width: 20%;
     color: white;
     position: absolute;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 6em;
 }
 
 figure:hover > h4 {
@@ -199,6 +222,11 @@ figure:hover > p {
     visibility: visible;
 }
 
+p,
+h4 {
+    max-height: 1em;
+}
+
 p {
     visibility: hidden;
     font-size: 2.5em;
@@ -207,4 +235,31 @@ p {
 h4 {
     visibility: hidden;
     font-size: 1.5em;
+}
+
+@media (max-width: 1255px) {
+    header nav {
+        display: none;
+    }
+    header > :last-child {
+        display: inline;
+    }
+    main * {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    main div {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    figure {
+        width: 40%;
+        translate: 0em 13em;
+    }
 }
